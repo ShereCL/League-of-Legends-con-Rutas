@@ -1,0 +1,52 @@
+.style-nombre {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 2px;
+  margin-left: 40px;
+  padding: 8px;
+  width: 150px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.campeon-img {
+  margin: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.campeon-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f5f5f5;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.detail-info {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.detail-info p {
+  margin: 0.5rem 0;
+}

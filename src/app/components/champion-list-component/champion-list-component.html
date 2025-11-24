@@ -1,0 +1,14 @@
+<input type="text" placeholder="Buscar campeón..." [(ngModel)]="busquedaText" />
+<div class="container-campeones">
+  <div
+    class="card-campeon"
+    *ngFor="let campeon of filtarPersonaje"
+    (click)="selectChampion(campeon)"
+  >
+    <img
+      [src]="'https://ddragon.leagueoflegends.com/cdn/14.10.1/img/champion/' + campeon.id + '.png'"
+      [alt]="campeon.name"
+    />
+    <p>{{ campeon.name }}</p>
+  </div>
+</div>

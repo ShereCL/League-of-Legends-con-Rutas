@@ -1,0 +1,23 @@
+<div class="details">
+  <div *ngIf="champion; else loading">
+    <img
+      class="campeon-img"
+      [src]="
+        'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/' +
+        champion.id +
+        '_' +
+        champion.skins[0].num +
+        '.jpg'
+      "
+      [alt]="champion.name"
+    />
+  </div>
+  <h2 class="style-nombre">{{ champion.name }}</h2>
+  <h4>{{ champion.title }}</h4>
+  <p class="style-lore"><strong>Lore</strong><br />{{ champion.lore }}</p>
+</div>
+
+<!-- Esto me sirve para que aparezca mientras cargan los datos-->
+<ng-template #loading>
+  <p>Cargando detalles...</p>
+</ng-template>

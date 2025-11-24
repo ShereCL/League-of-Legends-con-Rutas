@@ -1,0 +1,66 @@
+input {
+  width: 350px;
+  padding: 8px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  border: 2px solid #1b4ed6;
+  background-color: #0a1f44;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s all;
+  box-shadow: 0 0 8px #163f9b;
+}
+
+input::placeholder {
+  color: #3b82f6;
+  opacity: 0.7;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 12px #2563eb;
+  background-color: #0d2b5b;
+}
+
+input:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+.card-campeon {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  align-items: normal;
+}
+
+.card-campeon:hover {
+  transform: scale(1.1);
+}
+
+.card-campeon p {
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.card-campeon img {
+  width: 80px;
+  background: linear-gradient(145deg, #0d2b5b, #102e6d);
+  border-radius: 16px;
+  box-shadow: 0 0 20px #163f9b;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container-campeones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+}
