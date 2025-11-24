@@ -1,4 +1,5 @@
 <div class="details">
+  <div class="box-superior">
   <div *ngIf="champion; else loading">
     <img
       class="campeon-img"
@@ -12,9 +13,14 @@
       [alt]="champion.name"
     />
   </div>
-  <h2 class="style-nombre">{{ champion.name }}</h2>
-  <h4>{{ champion.title }}</h4>
-  <p class="style-lore"><strong>Lore</strong><br />{{ champion.lore }}</p>
+  <div class="description-champion">
+  <h1 class="style-nombre">{{ champion.name }}</h1>
+  <h3 class="style-title">{{ champion.title }}</h3>
+  <h3 class="tags-champions">{{ champion.tags }}</h3>
+  </div>
+  </div>
+  <h2 class="style-lore">Lore</h2>
+  <p>{{ champion.lore }}</p>
 </div>
 
 <!-- Esto me sirve para que aparezca mientras cargan los datos-->

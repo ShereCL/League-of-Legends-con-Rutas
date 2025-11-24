@@ -3,13 +3,18 @@
   flex-direction: row;
   gap: 20px;
   padding: 20px;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items:flex-end;
+  margin-right: 30px;
   flex-wrap: wrap;
 }
 
 .routes {
   flex: 1 1 300px;
   max-width: 400px;
-  color: aliceblue;
+  color:#FFA810;
+  text-align: end;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: medium;
 }
