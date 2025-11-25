@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { Component, OnInit, signal } from '@angular/core';
+import { RouterOutlet, RouterLinkWithHref, Router, NavigationEnd } from '@angular/router';
 import { ChampionListComponent } from './components/champion-list-component/champion-list-component';
+import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',

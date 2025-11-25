@@ -1,23 +1,25 @@
 <div class="details">
   <div class="box-superior">
-  <div *ngIf="champion; else loading">
-    <img
-      class="campeon-img"
-      [src]="
-        'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/' +
-        champion.id +
-        '_' +
-        champion.skins[0].num +
-        '.jpg'
-      "
-      [alt]="champion.name"
-    />
-  </div>
-  <div class="description-champion">
-  <h1 class="style-nombre">{{ champion.name }}</h1>
-  <h3 class="style-title">{{ champion.title }}</h3>
-  <h3 class="tags-champions">{{ champion.tags }}</h3>
-  </div>
+    <div *ngIf="champion; else loading">
+      <img
+        class="campeon-img"
+        [src]="
+          'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/' +
+          champion.id +
+          '_' +
+          champion.skins[0].num +
+          '.jpg'
+        "
+        [alt]="champion.name"
+      />
+    </div>
+    <div class="description-champion">
+      <h1 class="style-nombre">{{ champion.name }}</h1>
+      <h3 class="style-title">{{ champion.title }}</h3>
+      <div>
+        <span *ngFor="let tag of champion.tags" class="tags-champions">{{ tag }}</span>
+      </div>
+    </div>
   </div>
   <h2 class="style-lore">Lore</h2>
   <p>{{ champion.lore }}</p>

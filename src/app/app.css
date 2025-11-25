@@ -3,17 +3,16 @@
   flex-direction: row;
   gap: 20px;
   padding: 20px;
-  justify-content: flex-end;
-  align-items:flex-end;
-  margin-right: 30px;
+  justify-content: flex-start;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 
 .routes {
   flex: 1 1 300px;
   max-width: 400px;
-  color:#FFA810;
-  text-align: end;
+  color: #ffa810;
+  text-align: start;
   text-decoration: none;
   font-weight: 700;
   font-size: medium;
